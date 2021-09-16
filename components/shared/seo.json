@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "name": "Seo",
+    "icon": "search"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "shareImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isProduct": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
